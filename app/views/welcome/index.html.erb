@@ -1,0 +1,13 @@
+<h1>Seja Bem Vindo</h1>
+<h2>Maria Fernanda</h2>
+
+<%=nome_aplica%>
+<ul>
+    <%# #<li><a href="/coins">Cadastro de Moedas</a></li> %>
+    <li><%= link_to "Cadastro de Moedas", coins_path%></li>
+</ul>
+
+<p><b>Data:</b> <%=data_br(Date.today)%> </p>
+<p>Você está em ambiente de: <%= ambiente_rails %> </p>
+<%# #<p>Seu nome de traz para frente é <% nome = "Maria Fernanda" </p> # Sem o = não imprime na tela a parte do ruby %>
+<%# #<p>Seu nome de traz para frente é <%= nome.reverse </p> %>
